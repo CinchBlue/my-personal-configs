@@ -1,6 +1,6 @@
 [user]
-    name = Austin Tasato 
-    email = CinchBlue@users.noreply.github.com
+    name = Austin Tasato
+    email = aytasato@gmail.com
     username = CinchBlue
 
 [core]
@@ -14,8 +14,18 @@
     dc = diff --cached
     wow = log --oneline --graph --decorate
     co = checkout
-    
+    b = branch
 
-
-
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[difftool "sourcetree"]
+    cmd = '' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+    cmd = "'' "
+    trustExitCode = true
+[credential "helperselector"]
+    selected = wincred
 
