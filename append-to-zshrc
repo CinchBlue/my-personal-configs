@@ -1,0 +1,2 @@
+ZSH_THEME="bira"
+alias dush='du -sh ./*'

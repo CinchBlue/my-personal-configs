@@ -3,8 +3,12 @@
     email = aytasato@gmail.com
     username = CinchBlue
 
+[pull]
+    rebase = true
+
 [core]
     editor = vim
+	excludesfile = /Users/austintasato/.gitignore_global
 
 [alias]
     st = status -s -b

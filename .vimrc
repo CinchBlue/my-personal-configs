@@ -62,4 +62,4 @@ set wrap
 set expandtab
 
 set smarttab
-
+set number
